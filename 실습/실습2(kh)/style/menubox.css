@@ -1,0 +1,12 @@
+.navigator{
+    box-sizing: border-box;
+    width: 1000px; height: 40px;
+    border: 2px solid red;
+    
+}
+
+ul,li,ol{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
