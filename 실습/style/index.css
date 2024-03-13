@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: #0f0f0f;
+    font-family: "Noto Sans KR", sans-serif;
+    /* body 안에 떠있는 모든 내용은 white 컬러 글씨가 될 것 */
+    /* font-family css 내용에 있는 그대로 넣으라고 써져 있음 */
+    padding-top: 60px;
+    /* fixed 된 header 영역을 사용하지 않는 공간으로 만들어줘야 처음에 메인 영역이 표시되었을 때 header 영역을 침범하지 않음 */
+    padding-left: 70px;
+}
+
+
+div{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0px;
+}
+/* 어차피 모든 곳에서 margin을 사용자가 직접 정해줄 것이므로 0으로 해도 됨 */
+
+main{
+    padding: 10px 20px 0px;
+}

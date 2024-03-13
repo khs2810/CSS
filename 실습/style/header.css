@@ -1,0 +1,151 @@
+.header{
+    height: 56px;
+    width: 100%;
+
+    position: fixed; 
+    top: 0;
+    left: 0;
+    /* border-bottom: 1px solid #4d4d4d; */ /* 만들 때 너무 안 보여서 표시하기 위함 */
+    background-color: #0f0f0f;
+    z-index: 200;
+
+    display: flex;
+    flex-direction: row; /* 가로 정렬 */
+    justify-content: space-between;
+}
+
+/* 같은 화면 안에 body 위에 고정된 header가 올라가 있는 형태임 */
+/* z-index값이 높을 수록 더 높은 우선순위를 가짐 */
+/* z-index가 99999 같은 경우 반드시 그 위로 올라가는 무언가가 생길 텐데 999991 처럼 불편하게 만들어짐 */
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin: 0 20px 0 24px;
+}
+/* 
+    이미지는 보통 가로 세로의 비율이 이미 정해져 있음 
+    -> 상황 마다 가로 세로 중 중요한 것 하나를 택해서 하나만 기입하는 게 좋음 
+*/
+
+.youtube-logo{
+    height: 70px;
+}
+
+.middle-section{
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    flex: 1; /* 이 부모에 대한 공간에서 비율을 나눌 때 1이라는 비율을 가져오게 됨 */
+    margin-left: 70px; /* 줄였을 때 옆의 youtube 로고 공간과 딱 붙게 되는 것 방지 */
+    margin-right: 40px;
+}
+
+.search-bar{
+    height: 36px;
+    flex: 1;
+    font-size: 16px;
+    border: 1px solid #404040;
+    background-color: #121212;
+    padding-left: 10px; /* 검색 글씨 왼쪽에서 띄우는 것 */
+    border-radius: 20px 0px 0px 20px;
+    /* 모서리를 둥글게 만들어주는 기능 */
+    /* 왼쪽 두 면만 둥글게 만든 것 */
+}
+
+.search-button{
+    height: 40px;
+    /* box-sizing 안 했기 때문에 서치바 height 36 + border 2 + padding 2 준 것 */
+    width: 64px;
+    border: 1px solid #404040;
+    border-left: none; /* border가 서치바랑 중복 돼서 겹쳐서 하나를 빼준 것 */
+    background-color: #222222;
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 10px;
+}
+
+.search-button>img{
+    height: 25px;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #222222;
+    border: none;
+}
+
+.voice-search-button>img{
+    height: 25px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip{
+    position: absolute;
+    color: white;
+    background: rgb(88, 88, 88);
+    bottom: -40px; /* div 공간 안에 들어 있으므로 0px로 하면 div 밑에 딱 붙을 텐데, -로 그 이상까지 넘어가주는 것 */
+    font-size: 12px;
+    white-space: nowrap; /* 개행에 관련한 것, 개행하지 말라고 해준 것 */
+    padding: 8px;
+    border-radius: 3px;
+    pointer-events: none; /* 마우스와 관련한 이벤트를 전부 없애겠다, 커서 바뀌는 것을 차단한 것 */
+    opacity: 0%;
+    transition: opacity 0.3s; /* 나타나는 속도의 조절 */
+    /* transition: 0.3s; 
+        => 이 tooltip 안의 모든 CSS 속성들에 대해 트랜지션을 먹여주게 됨
+        어떤 속성에 걸 것인지를 넣어줘야 함 ex) 컬러, 위치값 등*/
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+    opacity: 0.9;
+}
+
+.right-section{
+    width: 150px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-icon-container>img,
+.notifications-icon-container>img{
+    height: 28px;
+}
+
+.current-user-picture{
+    height: 32px;
+    border-radius: 16px;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: -5px; /* +는 무조건 중심으로 가는 값 */
+    right: -5px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 1px 6px;
+    font-size: 11px;
+}
