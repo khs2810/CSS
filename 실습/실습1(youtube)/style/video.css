@@ -1,24 +1,13 @@
-/* 스크롤을 내려서 한 페이지씩 보이는 경우 한 페이지를 섹션이라고 함 */
-
 .video-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* column을 어떻게 배열할 것인가 */
     column-gap: 16px;
     row-gap: 40px;
 }
-/* flex는 가로 또는 세로 정렬 */
-/* grid는 합쳐서 x축으로 몇 개를 배열할지, y축으로 몇 개를 배열할지 */
-/* fr : grid의 비율(%) */
 
-/* 미디어 쿼리 분기점 서치 */
-/* 화면 크기마다 grid가 변한 것 */
-
-/* media의 width 크기가 484px까지일 때 이 CSS를 적용해라 */
-@media (max-width:484px){
+@media (max-width: 484px){
     .video-grid{ grid-template-columns: 1fr; }
 }
 
-/* media의 width 크기가 485에서 749일 때 이 CSS를 적용해라 */
 @media (min-width: 485px) and (max-width:749px){
     .video-grid{ grid-template-columns: 1fr 1fr; }
 }
@@ -30,7 +19,6 @@
 @media (min-width: 1000px){
     .video-grid{ grid-template-columns: 1fr 1fr 1fr 1fr; }
 }
-/* 세로는 스크롤이 있지만 가로는 없으면 이상하다고 흔히 생각하게 되므로 가로 기준으로 맞추기 */
 
 .thumbnail-row{
     margin-bottom: 8px;
@@ -39,16 +27,16 @@
 
 .thumbnail{
     width: 100%;
-    height: 160px;
+    height: 200px;
 }
 
-.video-type{ /* video-time */
+.video-time{
     position: absolute;
-    right: 5px;
+    right: 6px;
     bottom: 8px;
     font-size: 12px;
     font-weight: 500;
-    background-color: black;
+    background: black;
     padding: 2px 4px;
     border-radius: 3px;
 }
@@ -56,10 +44,9 @@
 .video-info-grid{
     display: grid;
     grid-template-columns: 50px 1fr;
-    /* 첫 번째 컬럼을 50px로 고정하고 나머지 1fr은 두 번째가 다 가져가겠다 */
 }
 
-.channel-picture>img{
+.channel-picture > img{
     width: 36px;
     border-radius: 50px;
 }
@@ -75,3 +62,4 @@
     font-size: 12px;
     color: #aaaaaa;
 }
+

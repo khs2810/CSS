@@ -1,13 +1,13 @@
 .sidebar{
     position: fixed;
-    left: 0px;
+    left: 0;
     top: 57px;
-    bottom: 0px; /* 화면 맨 밑까지 차지하기 위함 */
+    bottom: 0px;
     width: 64px;
     padding: 0px 4px;
-    background-color: #0f0f0f;
+    background: #0f0f0f;
     padding-top: 5px;
-    z-index: 200; /* 굳이 안 잡고 있다가 겹치면 잡아줘도 됨 */
+    z-index: 200;
 }
 
 .sidebar-link{
@@ -21,7 +21,7 @@
 }
 
 .sidebar-link:hover{
-    background-color: #242424;
+    background-color: #292929;
 }
 
 .sidebar-link img{

@@ -1,57 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃스타일</title>
     <style>
-        .size-test {
-            border: 1px solid red;
-        }
+        .size-test{border: 1px solid red;}
+        #test1{width: 400px; height: 200px;}
+        #test2{width: 50%; height: 150px;}
 
-        #test1 {
-            width: 400px;
-            height: 200px;
-        }
+        .red{background: red;}
+        .yellow{background: yellow;}
+        .pink{background: pink;}
 
-        #test2 {
-            width: 50%;
-            height: 150px;
-        }
-
-        .red {
-            background: red;
-        }
-
-        .yellow {
-            background: yellow;
-        }
-
-        .pink {
-            background: pink;
-        }
-
-        .display-test {
+        .display-test{
             border: 1px solid black;
             width: 150px;
             height: 150px;
         }
 
-        .inline {
-            display: inline;
-        }
-
-        .inline-block {
-            display: inline-block;
-        }
-
-        .block {
-            display: block;
-        }
+        .inline{display: inline;}
+        .inline-block{display: inline-block;}
+        .block{display: block;}
     </style>
 </head>
-
 <body>
     <!-- 
         블럭요소: 한 줄로 영역을 차지하고 있는 요소 / 줄바꿈 발생(div, p, pre, h)
@@ -59,7 +31,6 @@
 
         * 요소 영역: => content영역 + padding영역 + border영역
           요소 바깥쪽 영역 : => margin영역
-        
     -->
 
     <h1>레이아웃 관련 스타일</h1>
@@ -95,6 +66,7 @@
     <div class="display-test block red">첫번째</div>
     <div class="display-test block yellow">두번째</div>
     <div class="display-test block pink">세번째</div>
-</body>
 
+    <br><br><br><br><br>
+</body>
 </html>

@@ -8,39 +8,81 @@
 
 
     <link rel="stylesheet" href="./style/header.css">
-    <!-- <link rel="stylesheet" href="./style/index.css"> -->
+    <link rel="stylesheet" href="./style/index.css">
     <!-- <link rel="stylesheet" href="./style/footer.css"> -->
 </head>
 
 <body>
-    <div class="wrap">
+    <div id="wrapper">
         <!-- 헤드 -->
-        <header class="header">
+        <div id="header" class="bo">
             <!-- 로고 -->
-            <div class="left-section">
-                <img id="KH-Logo" src="실습문제2 이미지/logo.PNG" alt="KH로고">
-            </div>
+            <img src="./images/logo.PNG" alt="KH로고">
+
             <!-- 검색바 -->
-            <div class="middle-section">
-                <input class="search-bar" type="text" placeholder="검색어를 입력하세요">
-                <button class="search-button">
-                    <img src="./실습문제2 이미지/search.png" alt="검색 버튼">   
+            <div class="search bo">
+                <input type="t" placeholder="검색어를 입력하세요">
+                <button class="search-img">
+                    <!-- <img src="./images/search.PNG" alt=""> -->
                 </button>
             </div>
-            <div class="right-section"></div>
-        </header>  
-    </div>
-    <!-- 네비게이션 메뉴 -->
-    <div class="navigator">
-        <ul id="navi">
-            <li><a href="#">교육과정</a></li>
-            <li><a href="#">교육원소개</a></li>
-            <li><a href="#">취업지원센터</a></li>
-            <li><a href="#">산학연계</a></li>
-            <li><a href="#">상담센터</a></li>
-        </ul>
 
+            <div style="width: 95px;"></div>
+        </div>
+        <!-- 네비게이션 메뉴 -->
+        <div id="nav" class="bo">
+            <ul>
+                <li><a href="#">교육과정</a></li>
+                <li><a href="#">교육원소개</a></li>
+                <li><a href="#">취업지원센터</a></li>
+                <li><a href="#">산학연계</a></li>
+                <li><a href="#">상담센터</a></li>
+            </ul>
+        </div>
+        <!-- 메인 컨텐츠 -->
+        <div id="section">
+            <div id="section1" class="bo">
+                <img src="./images/banner.PNG" alt="광고배너">
+            </div>
+            <div id="section2" class="bo">
+                <p>안녕하세요 여기는 공지사항이 들어오는 자리입니다.</p>
+                <ul>
+                    <li><a href="#">경제</a></li>
+                    <li><a href="#">연예</a></li>
+                    <li><a href="#">사회</a></li>
+                </ul>
+            </div>
+            <div id="section3" class="bo"></div>
+        </div>
+        <!-- 로그인폼 -->
+        <div id="aside" class="bo">
+            <div id="aside1" class="bo">
+                <div class="login">
+                    <div class="input">
+                        <input type="text" placeholder="아이디를 입력하세요">
+                        <input type="text" placeholder="비밀번호를 입력하세요">
+                    </div>
+                    <div class="btn">
+                        <button>로그인</button>
+                    </div>
+                </div>
+                
+                <div class="aside1-menu">
+                    <ul>
+                        <li><a href="">아이디 |</a></li>
+                        <li><a href="">비밀번호찾기 |</a></li>
+                        <li><a href="">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="aside2" class="bo">
+
+            </div>
+        </div>
     </div>
+
+
+
 </body>
 
 </html>
