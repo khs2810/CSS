@@ -71,7 +71,9 @@ li a{
 
 #nav > ul > li{
     width: 20%;
+    padding: 2px;
     position: relative;
+    border: 1px solid rgb(224, 29, 29); 
 }
 
 #nav > ul > li ul{
@@ -80,8 +82,9 @@ li a{
     left: 0;
     width: 100%;
     padding: 10px 0px;
-    background: white;
+    background: rgba(255, 255, 255, 0.918);
     display: none;
+    border: 1px solid rgb(224, 29, 29); 
 }
 
 #nav li a{
@@ -95,8 +98,17 @@ li a{
 
 #nav > ul ul:hover{
     display: block;
+    
 }
 
+#nav > ul > li a:hover{    
+    color: rgb(223, 14, 14);
+    
+}
+
+#nav > ul > li:hover{
+    scale: 1.09;
+}
 
 /* section */
 
