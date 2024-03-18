@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 li {
@@ -63,16 +64,24 @@ li a {
     padding: 20px 0;
 }
 
-#nav>ul {
+#nav>.nav1 {
     display: flex;
     width: 100%;
     text-align: center;
+    border: 1px solid red;
 }
 
+#nav>.nav2{
+    text-align: center;
+}
+#nav>.nav2>li{
+    
+}
 #nav>ul>li {
     width: 20%;
     padding: 2px;
     position: relative;
+
 }
 
 #nav>ul>li ul {
@@ -88,10 +97,12 @@ li a {
 #nav li a {
     color: gray;
     font-weight: bold;
+    
 }
 
 #nav>ul>li a:hover+ul {
     display: block;
+    
 }
 
 #nav>ul ul:hover {
@@ -101,11 +112,13 @@ li a {
 
 #nav>ul>li a:hover {
     color: rgb(223, 14, 14);
-
+    
 }
 
-#nav>ul>li:hover {
-    scale: 1.09;
+#nav>ul:hover {}
+
+.nav2>li>a:hover {
+    display: block;
 }
 
 /* section */
